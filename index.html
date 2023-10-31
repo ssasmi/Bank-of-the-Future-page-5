@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+
+    <link
+      rel="preload"
+      href="fonts/montserrat-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/montserrat-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>Bank of the Future | page 5</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <section class="client">
+      <div class="client__container">
+        <div class="client__progress progress">
+          <div style="width: 20%" data-count="20"></div>
+        </div>
+        <h1 class="client__title title">параметры цели</h1>
+        <div class="client__info">
+          <div class="client__card current">
+            <h3 class="client__service">Сохранить и&nbsp;преумножить</h3>
+            <img
+              loading="lazy"
+              src="img/card-1.jpg"
+              class="client__image"
+              alt="Сохранить 
+            и преумножить"
+            />
+          </div>
+          <h2 class="client__label">Сохранение и преумножение капитала</h2>
+          <!---->
+          <form id="form-culc" class="culc__form" action="#!" method="post">
+            <label for="culc-capital">Текущий капитал, ₽</label>
+            <div class="culc__slider">
+              <input type="range" class="culc__slider-input" min="0" max="100000000" value="25000000">
+              <input type="number" class="culc__slider-value" id="culc-capital" min="0" max="100000000" value="25000000">
+            </div>
+            <label for="culc-monthly">Ежемесячное пополнение капитала, ₽</label>
+            <div class="culc__slider">
+              <input type="range" class="culc__slider-input culc__monthly-input" data-num="25%" min="0" max="100000000" value="25000000">
+              <input type="number" class="culc__slider-value culc__monthly-value" id="culc-monthly" min="0" max="100000000" value="25000000">
+            </div>
+            <h2 class="client__label culc__invest">Горизонт инвестирования</h2>
+            <label for="culc-invest">Срок достижения цели, лет  (воспользуйтесь ползунком или выберите дату на календаре)</label>
+            <div class="culc__slider">
+              <input type="range" class="culc__slider-input culc__invest-input" min="1" max="20" value="4">
+              <input type="number" class="culc__slider-value culc__invest-value" id="culc-invest" min="1" max="20" value="4">
+            </div>
+            <label for="culc-inflation">Инфляция, %</label>
+            <div class="culc__slider">
+              <input type="range" class="culc__slider-input culc__inflation-input" min="0" max="100" step="0.1" value="5.7">
+              <input type="number" class="culc__slider-value culc__inflation-value" id="culc-inflation" min="0" max="100" step="0.1" value="5.7">
+            </div>
+
+          </form>
+
+          <div class="client__ready">
+            <button class="btn client__btn--back">
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.292891 7.29289C-0.0976333 7.68341 -0.0976334 8.31658 0.29289 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65685 0.92893L0.292891 7.29289ZM31 7L0.999998 7L0.999998 9L31 9L31 7Z"
+                  fill="url(#paint0_linear_1_87)"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_87"
+                    x1="21.9091"
+                    y1="8.39167"
+                    x2="21.966"
+                    y2="6.74542"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#B074B3" />
+                    <stop offset="1" stop-color="#DA278B" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <div class="btn__text">назад</div>
+            </button>
+            <button class="btn client__btn--next" type="submit">
+              <div class="btn__text">далее</div>
+              <svg
+                width="31"
+                height="16"
+                viewBox="0 0 31 16"
+                fill="none"
+                style="display: block; transform: scale(-1, 1)"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.292891 7.29289C-0.0976333 7.68341 -0.0976334 8.31658 0.29289 8.7071L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34314C8.46159 1.95262 8.46159 1.31945 8.07107 0.92893C7.68054 0.538406 7.04738 0.538406 6.65685 0.92893L0.292891 7.29289ZM31 7L0.999998 7L0.999998 9L31 9L31 7Z"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_1_87"
+                    x1="21.9091"
+                    y1="8.39167"
+                    x2="21.966"
+                    y2="6.74542"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#B074B3" />
+                    <stop offset="1" stop-color="#DA278B" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
